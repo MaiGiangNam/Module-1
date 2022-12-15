@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CurrencyConverter</title>
+</head>
+<body>
+<input type="text" name="input" id="input">
+<select name="sl1" id="select1">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<select name="sl2" id="select2">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<button onclick="changeMoney()">Convert</button>
+<br>
+<p id="result"></p>
+<script>
+    function changeMoney() {
+        let inputMoney= document.getElementById("input").value;
+        let select1= document.getElementById("select1").value;
+        let select2= document.getElementById("select2").value;
+        let result;
+        if (select1==select2) {
+            result=inputMoney
+        }
+        else if ( select1=="vnd" && select2=="usd"){
+            result=inputMoney*0.0000438
+        }
+        else  {
+            result=inputMoney*22831
+                  }
+            document.getElementById("result").innerText="Result:"+result
+    }
+</script>
+
+</body>
+</html>

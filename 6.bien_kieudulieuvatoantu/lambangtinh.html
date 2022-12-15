@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" name="number1" id="n1">
+<input type="text" name="number2" id="n2"><br>
+<input type="button" value="(Addition+)"  onclick="add()" >
+<input type="button" value="(subtraction-)"  onclick="sub()" >
+<input type="button" value="(Multiplication*)" onclick="mul()" >
+<input type="button" value="(Division/)"  onclick="div()" >
+<p id="Result"></p>
+<script>
+       function add() {
+        let input1=parseInt(document.getElementById("n1").value);
+        let input2=parseInt(document.getElementById("n2").value);
+        let result
+           result=input1+input2;
+           document.getElementById("Result").innerText=+result;
+        }
+       function sub() {
+           let input1=parseInt(document.getElementById("n1").value);
+           let input2=parseInt(document.getElementById("n2").value);
+           let result
+           result=input1-input2;
+           document.getElementById("Result").innerText=+result;
+       }
+       function mul() {
+           let input1=parseInt(document.getElementById("n1").value);
+           let input2=parseInt(document.getElementById("n2").value);
+           let result
+           result=input1*input2;
+           document.getElementById("Result").innerText=+result;
+       }
+       function div() {
+           let input1=parseInt(document.getElementById("n1").value);
+           let input2=parseInt(document.getElementById("n2").value);
+           let result
+           result=input1/input2;
+           document.getElementById("Result").innerText=+result;
+       }
+
+</script>
+</body>
+</html>
