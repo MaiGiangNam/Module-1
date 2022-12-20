@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chisocannangcothe</title>
+</head>
+<body>
+<h1> Tinh chi so can bang co the</h1>
+<input type="number" id="weight" placeholder="nhap can nang">
+<input type="number" id="height" placeholder="nhap chieu cao">
+<button  onclick="tinhchiso()">tinh chi so</button>
+<p id="ketqua"></p>
+<script>
+    function tinhchiso() {
+        let a=document.getElementById("weight").value;
+        let b=document.getElementById("height").value;
+        b=b/100;
+        let c=a/(b*b);
+        if(c<18){
+        document.getElementById("ketqua").innerText="underweight"
+        }
+        else if(c<25){
+        document.getElementById("ketqua").innerText="normal"
+        }
+        else if(c<30){
+         document.getElementById("ketqua").innerText="overweight"
+        }
+        else{
+        document.getElementById("ketqua").innerText="obese"
+        }
+    }
+</script>
+</body>
+</html>
