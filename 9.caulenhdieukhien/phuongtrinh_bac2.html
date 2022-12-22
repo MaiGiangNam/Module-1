@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinh_bac2</title>
+</head>
+<body>
+<input type="number" id="a" placeholder="nhap he so a">
+<input type="number" id="b" placeholder="nhap he so b">
+<input type="number" id="c" placeholder="nhap he so c">
+<button onclick="giaiptb2()">giaiptb2</button>
+<p id="nghiem"></p>
+<p id="nghiem2"></p>
+
+<script>
+    function giaiptb2() {
+        let a = parseInt(document.getElementById("a").value)
+        let b = parseInt(document.getElementById("b").value)
+        let c = parseInt(document.getElementById("c").value)
+        let delta = Math.pow(b, 2) - 4 * a * c
+        let x1=(-b+(Math.sqrt(delta))/2*a)
+        let x2=(-b-(Math.sqrt(delta))/2*a)
+        if (a == 0) {
+            document.getElementById("nghiem").innerText = ("nghiem phuong trinh bac 2 la:" + (-c / a))
+        } else if(a!=0&&delta<0){
+            document.getElementById("nghiem").innerText=(" phuong trinh vo nghiem")}
+        else if(a!=0&&delta==0){
+            document.getElementById("nghiem").innerText=(" phuong trinh co nghiem kep la"+(-b/2*a))}
+        else{
+         document.getElementById("nghiem").innerText=(" phuong trinh co nghiem x1 la"+x1 )
+            document.getElementById("nghiem2").innerText=(" phuong trinh co nghiem x2 la"+x2 )
+
+
+        }
+
+
+    }
+</script>
+</body>
+</html>

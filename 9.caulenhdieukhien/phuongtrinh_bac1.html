@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuongtrinh_bac1</title>
+</head>
+<body>
+<input type="number" id="a" placeholder="nhap he so a">
+<input type="number" id="b" placeholder="nhap he so b">
+<button onclick="giaiptb1()">giaiptb1</button>
+<p id="nghiem"></p>
+
+<script>
+    function giaiptb1(){
+    let a=parseInt(document.getElementById("a").value)
+        let b=parseInt(document.getElementById("b").value)
+             if(a==0&&b==0){
+              document.getElementById("nghiem").innerText=("phuong trinh vo so nghiem")}
+         else if(a==0&&b!=0) {
+                document.getElementById("nghiem").innerText=(" phuong trinh vo nghiem")}
+    else {
+                    document.getElementById("nghiem").innerText=(" phuong trinh co nghiem:"+(-b/a))
+    }}
+
+
+</script>
+</body>
+</html>
