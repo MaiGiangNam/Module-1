@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>intamgiacvuong</title>
+</head>
+<body>
+<script>
+    let i
+    let j
+    let m
+    let n
+    for ( i = 1; i <= 5; i++)
+    {
+        for ( j = 1; j <= i; j++)
+        {
+            document.write("* ");
+
+        }
+        document.write("<br/>");
+    }
+    document.write("<br/>");
+
+    for ( i = 1; i <= 5; i++)
+    {
+        for (j = 6-i; j >0; j--) {
+            document.write("* ");
+        }
+        document.write("<br/>");
+    }
+    document.write("<br/>");
+
+    for (let i = 1; i <= 5; i++)
+    {
+        for (let j = 5-i; j >0; j--)
+        {
+            document.writeln("&ensp;")
+        }
+        for(m = 1;m<=i;m++){
+            document.write("* ")
+        }
+        document.write("<br/>");
+    }
+
+    document.write("<br/>");
+
+    for ( i = 0; i < 5; i++) {
+        for(let n = 1;n<=i;n++){
+            document.writeln("&ensp;");
+        }
+        for (let j = 5-i; j >0; j--) {
+            document.write("* ");
+        }
+        document.write("<br/>");
+    }
+
+</script>
+</body>
+</html>
