@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sodautienfibochiahet5</title>
+</head>
+<body>
+<script>
+    let n1 = 0,n2=1,a, i;
+    // num = parseInt (prompt (" nhap so luong cua day fibonaci "));
+    for ( i = 1; i <= 20; i++)
+    {
+        // document.write (" <br> " +  n1);
+        a = n1 + n2;
+        n1 = n2;
+        n2 = a;
+
+        if(a%5==0){
+         document.write (" so dau tien day fibo chia het cho 5 la " +  a)
+            break
+        }
+    }
+
+
+</script>
+</body>
+</html>
