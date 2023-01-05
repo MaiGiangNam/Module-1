@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>noihaimang</title>
+</head>
+<body>
+<script>
+    let n= +prompt('nhap so phan tu cua mang 1')
+    let i
+    let arr1=[]
+    for( i=1;i<=n; i++){
+        arr1[i-1]=+prompt('nhap vao phan tu thu'+i)
+    }
+    // for( i=0; i<arr1.length; i++){
+    //     document.write( arr1[i] )
+    // }
+
+    let m= +prompt('nhap so phan tu cua mang 2')
+    let j
+    let arr2=[]
+    for( j=1;j<=m; j++){
+        arr2[j-1]=+prompt('nhap vao phan tu thu'+j)
+    }
+    // for( j=0; j<arr2.length; j++){
+    //     document.write( arr[j] )
+    // }
+    let arr3=arr1.concat(arr2)
+
+
+
+
+    // let count=0
+    // let content = ''
+    // for(i=0; i<arr.length;i++){
+    //     if(arr[i]>=10){
+    //         count +=1
+    //         content += arr[i] + " "
+    //     }
+    // }
+    document.write("<br>" + arr3)
+</script>
+</body>
+</html>

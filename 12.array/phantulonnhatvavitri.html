@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phantulonnhatvavitri</title>
+</head>
+<body>
+<script>
+
+    let n= +prompt('nhap so phan tu cua mang')
+    let i
+    let arr=[]
+    for( i=1;i<=n; i++){
+        arr[i-1]=+prompt('nhap vao phan tu thu'+i)
+    }
+    for( i=0; i<arr.length; i++){
+        document.write( arr[i] )
+    }
+
+    let max=0
+    let content = ''
+    for(i=0; i<arr.length;i++){
+        if(arr[i]>=max){
+            max=arr[i]
+            content = arr[i] + " "
+        }
+    }
+    document.write("<br>" +"gia tri lon nhat trong mang la:"+content)
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

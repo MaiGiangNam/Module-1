@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien</title>
+</head>
+<body>
+<input type="text" id="search" placeholder="nhap tu can tim"/>
+<input type = "button" onclick="look();" value = "tim kiem"/>
+</body>
+<script>
+    function look(){
+        let tienganh = ["hello","how","are","you"];
+        let tiengviet = ["xin chao","nhu nao","la","ban"];
+        let tunhapvao = document.getElementById("search").value;
+        let index = tienganh.indexOf(tunhapvao) ;
+        let display = tiengviet[index];
+        if(index ==-1){
+            document.write("Không tìm thấy ");
+        }else{
+          document.write(display);
+        }
+    }
+</script>
+</html>

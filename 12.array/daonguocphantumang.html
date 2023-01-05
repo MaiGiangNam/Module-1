@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>daonguocphantumang</title>
+</head>
+<body>
+<script>
+    let n= +prompt('nhap so phan tu cua mang')
+    let i
+    let arr=[]
+    for( i=1;i<=n; i++){
+        arr[i-1]=+prompt('nhap vao phan tu thu'+i)
+    }
+    // for( i=0; i<arr.length; i++){
+    //     document.write( arr[i] )
+    // }
+
+    let first=0
+    let last =arr.length-1
+    while(first<last){
+        let b=arr[first]
+        arr[first]=arr[last]
+        arr[last]=b
+        first++
+        last--
+    }
+    document.write( arr)
+    </script>
+</body>
+</html>

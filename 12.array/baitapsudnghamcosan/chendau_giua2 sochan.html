@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chendau_giuasochan</title>
+</head>
+<body>
+<script>
+    let n= +prompt('nhap so phan tu cua mang')
+    let i
+    let arr=[]
+    for( i=1;i<=n; i++){
+        arr[i-1]=+prompt('nhap vao phan tu thu'+i)
+    }
+    let count = [arr[0]];
+    for( i=1; i<arr.length; i++)
+    {
+        if((arr[i-1]%2 === 0)&&(arr[i]%2 === 0))
+        {
+            count.push('-', arr[i]);
+        }
+        else
+        {
+            count.push(arr[i]);
+        }
+    }
+    document.write(count.join(''));
+</script>
+
+</body>
+</html>

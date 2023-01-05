@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuhoachuthuong</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập chuỗi:")
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz'
+    let count=[]
+    for (let i = 0; i < str.length ; i++) {
+        if(UPPER.indexOf(str[i]) != -1){
+            count.push(str[i].toLowerCase());
+        }else if(LOWER.indexOf(str[i]) != -1){
+            count.push(str[i].toUpperCase());
+        }else{
+            count.push(str[i]);
+        }
+    }
+
+    document.write(count.join(''));
+</script>
+</body>
+</html>
