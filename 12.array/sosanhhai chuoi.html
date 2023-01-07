@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sosahahichuoi</title>
+</head>
+<body>
+<script>
+    let n= +prompt('nhap so phan tu cua chuoi 1')
+    let arr1=[]
+    for( let i=1;i<=n; i++){
+        arr1[i-1]= prompt('nhap vao phan tu thu'+i)
+    }
+    let m= +prompt('nhap so phan tu cua chuoi 2')
+    let arr2=[]
+    for( let i=1;i<=m; i++){
+        arr2[i-1]= prompt('nhap vao phan tu thu'+i)
+    }
+    if(n!==m){
+        document.write('hai mang khong giong nhau')
+    }
+    else{
+        for(let i=0;i<n;i++){
+            if(arr1[i]!==arr2[i]){
+                break}
+
+
+    }
+        document.write('hai mang giong nhau')
+
+    }
+
+
+
+    // document.write("<br>" +"gia tri trung binh trong mang la:"+tb)
+</script>
+</body>
+</html>
