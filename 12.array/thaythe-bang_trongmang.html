@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thaythe-bang_trongmang</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhap so phan tu cua mang");
+    for (let i=1; i <= n; i++){
+        arr[i-1] = prompt("Nhập vào phần tử thứ " + i);
+        if(arr[i-1] == "-"){
+            arr[i-1] = "_";
+        }
+    }
+    document.write("Mảng sau khi thay the la: </br>"+arr);
+</script>
+</body>
+</html>
