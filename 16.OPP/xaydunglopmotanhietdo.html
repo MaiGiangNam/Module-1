@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xaydunglopmotanhietdo</title>
+</head>
+<body>
+
+    <script>
+        class Nhietdo {
+        constructor(nhietdo){
+            this.nhietdo= nhietdo;
+        }
+        setNhietdo(nhietdo){
+            if(nhietdo >= -273){
+                this.nhietdo = nhietdo;
+            }
+        }
+        getDof (nhietdo){
+            return (this.nhietdo*1.8+32);
+        }
+        getDok (nhietdo) {
+            return (this.nhietdo + 273.15);
+        }
+    }
+
+    let c = new Nhietdo(25);
+    let f=c.getDof();
+    let k=c.getDok();
+    document.write("C to F: " + f + "</br>");
+    document.write("C to K: " + k);
+</script>
+</body>
+</html>

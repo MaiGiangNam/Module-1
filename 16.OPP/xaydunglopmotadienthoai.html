@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xaydunglopmotadienthoai</title>
+</head>
+<body>
+<script>
+
+    class Mobile{
+        constructor(id, name, battery, status,message) {
+            this.id=id;
+            this.name=name;
+            this.battery = battery;
+            this.status = status;
+            this.memoryAreaOfCompose = [];
+            this.memoryAreaOfInbox = [];
+            this.memoryAreaOfSent = [];
+            this.message = '';
+        }
+
+        checkStatus(){
+            if(this.battery>0&&this.battery<100){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        turnOn(){
+            this.status = "ON";
+            alert("Dienthoaidangbat");
+        }
+
+        turnOff(){
+            this.status = "OFF";
+            alert("Dienthoaidangtat");
+        }
+
+        Charge(){
+            alert("Xac Pin" + this.battery++);
+        }
+
+        setMessage(message) {
+            this.message=message;
+                    }
+
+        getMessage(message) {
+            return this.message;
+                    }
+
+        sendMessage(message,mobile) {
+            mobile.setMessage(message);
+                    }
+
+    }
+    let samsung = new Mobile(1,'Samsung',80,"ON");
+    let iphone = new Mobile(2,'Iphone',50,"ON");
+    samsung.sendMessage("xinchao",iphone);
+    let message=iphone.getMessage()
+    document.write(message)
+</script>
+</body>
+</html>
