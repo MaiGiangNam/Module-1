@@ -8,37 +8,44 @@
 <script>
     class Bongden {
         constructor() {
-
-                    }
-        getSang() {
-            console.log=(' bong den sang');
+            this.trangThai = true;
         }
-        getToi() {
-            console.log=(' bong den tat') ;
+
+        getTrangThai() {
+            return this.trangThai;
+        }
+
+        batDen() {
+            alert("den sang!");
+            this.trangThai = true;
+        }
+        tatDen() {
+            alert("den tat!");
+            this.trangThai = false;
         }
     }
 
-    class Congtac{
+    class Congtac {
         constructor(Bongden) {
-        this.Bongden=Bongden;
+            this.Bongden = Bongden;
         }
-        getTrangthaicongtac() {
-            switch (this.Bongden){
-                case 1 : this.Bongden.getSang;
-                    console.log=(' cong tac dong dien')
-                case 2: this.Bongden.getToi;
-                    console.log=(' cong tac ngat dien ')
-                    }
-            }
-            }
 
-
-    let bongDenDienQuang = new Bongden();
-    let congTacSnider = new Congtac (bongDenDienQuang);
-
-    for (let i = 1; i <=8; i++) {
-        congTacSnider.getTrangthaicongtac();
+        ketNoiDen(den) {
+            this.Bongden = den;
+        }
+        batDen() {
+            this.Bongden.batDen();
+        }
+        tatDen() {
+            this.Bongden.tatDen();
+        }
     }
+
+    let den = new Bongden();
+    let congTac= new Congtac(den);
+    congTac.batDen();
+    congTac.tatDen();
+
 </script>
 
 </body>
