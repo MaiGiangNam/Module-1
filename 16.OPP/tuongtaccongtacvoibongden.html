@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>congtacvabongden</title>
+</head>
+<body>
+<script>
+    class Bongden {
+        constructor() {
+
+                    }
+        getSang() {
+            console.log=(' bong den sang');
+        }
+        getToi() {
+            console.log=(' bong den tat') ;
+        }
+    }
+
+    class Congtac{
+        constructor(Bongden) {
+        this.Bongden=Bongden;
+        }
+        getTrangthaicongtac() {
+            switch (this.Bongden){
+                case 1 : this.Bongden.getSang;
+                    console.log=(' cong tac dong dien')
+                case 2: this.Bongden.getToi;
+                    console.log=(' cong tac ngat dien ')
+                    }
+            }
+            }
+
+
+    let bongDenDienQuang = new Bongden();
+    let congTacSnider = new Congtac (bongDenDienQuang);
+
+    for (let i = 1; i <=8; i++) {
+        congTacSnider.getTrangthaicongtac();
+    }
+</script>
+
+</body>
+</html>
